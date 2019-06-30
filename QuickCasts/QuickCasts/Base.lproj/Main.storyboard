@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuickCasts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="our-fx-qNa">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wt3-h8-I2f">
+                                        <rect key="frame" x="0.0" y="10" width="414" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="dCc-Xu-3Hu">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="40"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="afS-Hx-Wde">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="40"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cYL-vG-Lu9">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="40"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bOK-wk-zQt">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="40"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.041786156589999998" green="0.51668661829999996" blue="0.99862962960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wt3-h8-I2f" firstAttribute="top" secondItem="our-fx-qNa" secondAttribute="top" constant="10" id="4ws-XQ-wAc"/>
+                                    <constraint firstItem="wt3-h8-I2f" firstAttribute="leading" secondItem="our-fx-qNa" secondAttribute="leading" id="Ohr-jL-xHz"/>
+                                    <constraint firstAttribute="trailing" secondItem="wt3-h8-I2f" secondAttribute="trailing" id="oyO-sp-H73"/>
+                                    <constraint firstAttribute="height" constant="60" id="pNG-S7-D9q"/>
+                                    <constraint firstAttribute="bottom" secondItem="wt3-h8-I2f" secondAttribute="bottom" constant="10" id="woZ-Bp-h7E"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoT-1m-vhi">
+                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <color key="backgroundColor" red="0.041786156589999998" green="0.51668661829999996" blue="0.99862962960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Oc-VEK" userLabel="Spacer">
+                                <rect key="frame" x="0.0" y="860" width="414" height="2"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="xyT-Lk-cI1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yoT-1m-vhi" secondAttribute="bottom" id="GbA-jP-OHT"/>
+                            <constraint firstItem="yoT-1m-vhi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gw7-dj-HV4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="our-fx-qNa" secondAttribute="bottom" id="OPv-Mr-rEb"/>
+                            <constraint firstItem="our-fx-qNa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Op2-Sq-oYg"/>
+                            <constraint firstItem="yoT-1m-vhi" firstAttribute="top" secondItem="fN8-Oc-VEK" secondAttribute="bottom" id="Rg8-hq-G88"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fN8-Oc-VEK" secondAttribute="trailing" id="Ygi-29-s8C"/>
+                            <constraint firstItem="fN8-Oc-VEK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aO3-QS-W22"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="our-fx-qNa" secondAttribute="trailing" id="cTg-Gj-xI1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yoT-1m-vhi" secondAttribute="trailing" id="cvF-Uw-U9g"/>
+                            <constraint firstItem="fN8-Oc-VEK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yC1-6R-Quj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="64" height="64"/>
+    </resources>
+</document>
