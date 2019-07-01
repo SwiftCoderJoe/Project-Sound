@@ -36,7 +36,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.041786156589999998" green="0.51668661829999996" blue="0.99862962960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="wt3-h8-I2f" firstAttribute="top" secondItem="our-fx-qNa" secondAttribute="top" constant="10" id="4ws-XQ-wAc"/>
                                     <constraint firstItem="wt3-h8-I2f" firstAttribute="leading" secondItem="our-fx-qNa" secondAttribute="leading" id="Ohr-jL-xHz"/>
@@ -47,7 +47,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoT-1m-vhi">
                                 <rect key="frame" x="0.0" y="862" width="414" height="34"/>
-                                <color key="backgroundColor" red="0.041786156589999998" green="0.51668661829999996" blue="0.99862962960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fN8-Oc-VEK" userLabel="Spacer">
                                 <rect key="frame" x="0.0" y="860" width="414" height="2"/>
@@ -57,18 +57,127 @@
                                     <constraint firstAttribute="height" constant="2" id="xyT-Lk-cI1"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BR-bp-A5q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="802"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGl-5p-LlA">
+                                        <rect key="frame" x="20" y="50" width="920" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hdD-SK-Po6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQg-ze-G4S">
+                                        <rect key="frame" x="0.0" y="110" width="940" height="170"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WANshowLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CuQ-uL-sOS" userLabel="WANshowLogo10">
+                                                <rect key="frame" x="20" y="10" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="4sc-jM-uW3"/>
+                                                    <constraint firstAttribute="height" constant="150" id="bml-ZK-iNJ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WANshowLogo" translatesAutoresizingMaskIntoConstraints="NO" id="i2j-aE-AMk" userLabel="WANshowLogo15">
+                                                <rect key="frame" x="190" y="10" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="J88-hv-yEc"/>
+                                                    <constraint firstAttribute="width" constant="150" id="Tvk-Bw-ibS"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WANshowLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Pal-Qe-xYB" userLabel="WANshowLogo20">
+                                                <rect key="frame" x="360" y="10" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="31p-A9-40y"/>
+                                                    <constraint firstAttribute="height" constant="150" id="aEJ-IE-BCa"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Pal-Qe-xYB" secondAttribute="bottom" constant="10" id="JgK-09-LKZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="i2j-aE-AMk" secondAttribute="bottom" constant="10" id="Vr3-hF-U8v"/>
+                                            <constraint firstAttribute="bottom" secondItem="CuQ-uL-sOS" secondAttribute="bottom" constant="10" id="flY-Lq-4pX"/>
+                                            <constraint firstItem="i2j-aE-AMk" firstAttribute="top" secondItem="kQg-ze-G4S" secondAttribute="top" constant="10" id="gX7-3T-05D"/>
+                                            <constraint firstItem="CuQ-uL-sOS" firstAttribute="top" secondItem="kQg-ze-G4S" secondAttribute="top" constant="10" id="l8j-Dp-Jv4"/>
+                                            <constraint firstItem="i2j-aE-AMk" firstAttribute="leading" secondItem="CuQ-uL-sOS" secondAttribute="trailing" constant="20" id="lIe-wt-9YP"/>
+                                            <constraint firstAttribute="height" constant="170" id="o9O-SP-U67"/>
+                                            <constraint firstItem="Pal-Qe-xYB" firstAttribute="top" secondItem="kQg-ze-G4S" secondAttribute="top" constant="10" id="t2y-Of-p24"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pal-Qe-xYB" secondAttribute="trailing" constant="20" id="vjb-aF-Kbl"/>
+                                            <constraint firstItem="CuQ-uL-sOS" firstAttribute="leading" secondItem="kQg-ze-G4S" secondAttribute="leading" constant="20" id="wEt-Jm-YNP"/>
+                                            <constraint firstItem="Pal-Qe-xYB" firstAttribute="leading" secondItem="i2j-aE-AMk" secondAttribute="trailing" constant="20" id="wpr-Ec-Usb"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="agr-am-M2T"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="zhs-Hb-WJ0"/>
+                                    </scrollView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Casts You Follow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FN5-Ry-dKC">
+                                        <rect key="frame" x="20" y="290" width="920" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="1r5-44-bwh"/>
+                                            <constraint firstAttribute="height" constant="50" id="DkY-Uc-bQq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TechLinkedLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IHx-Ew-oV9">
+                                        <rect key="frame" x="20" y="350" width="900" height="600"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="EIP-Mh-K7r"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kQg-ze-G4S" firstAttribute="leading" secondItem="xxe-pU-xq5" secondAttribute="leading" id="1U3-ng-67C"/>
+                                    <constraint firstAttribute="trailing" secondItem="IHx-Ew-oV9" secondAttribute="trailing" constant="20" id="3My-QJ-YrY"/>
+                                    <constraint firstItem="kQg-ze-G4S" firstAttribute="trailing" secondItem="3BR-bp-A5q" secondAttribute="trailing" id="4GK-PF-A0c"/>
+                                    <constraint firstItem="FN5-Ry-dKC" firstAttribute="top" secondItem="kQg-ze-G4S" secondAttribute="bottom" constant="10" id="60o-ug-sj2"/>
+                                    <constraint firstAttribute="trailing" secondItem="FN5-Ry-dKC" secondAttribute="trailing" id="EnC-7N-KkG"/>
+                                    <constraint firstItem="kQg-ze-G4S" firstAttribute="top" secondItem="qGl-5p-LlA" secondAttribute="bottom" constant="10" id="L7A-Fe-foU"/>
+                                    <constraint firstItem="kQg-ze-G4S" firstAttribute="trailing" secondItem="xxe-pU-xq5" secondAttribute="trailing" id="Tzd-uT-WVT"/>
+                                    <constraint firstItem="qGl-5p-LlA" firstAttribute="top" secondItem="3BR-bp-A5q" secondAttribute="top" constant="50" id="eTr-jd-Ag0"/>
+                                    <constraint firstItem="IHx-Ew-oV9" firstAttribute="top" secondItem="FN5-Ry-dKC" secondAttribute="bottom" constant="10" id="fEK-Z8-0Da"/>
+                                    <constraint firstItem="qGl-5p-LlA" firstAttribute="leading" secondItem="3BR-bp-A5q" secondAttribute="leading" constant="20" id="iBB-YR-39v"/>
+                                    <constraint firstItem="IHx-Ew-oV9" firstAttribute="leading" secondItem="3BR-bp-A5q" secondAttribute="leading" constant="20" id="iyV-bF-cIg"/>
+                                    <constraint firstAttribute="bottom" secondItem="IHx-Ew-oV9" secondAttribute="bottom" constant="10" id="j7P-0T-cTE"/>
+                                    <constraint firstItem="FN5-Ry-dKC" firstAttribute="leading" secondItem="3BR-bp-A5q" secondAttribute="leading" constant="20" id="oC7-Ap-E77"/>
+                                    <constraint firstItem="kQg-ze-G4S" firstAttribute="leading" secondItem="3BR-bp-A5q" secondAttribute="leading" id="wx7-Cx-yEU"/>
+                                    <constraint firstAttribute="trailing" secondItem="qGl-5p-LlA" secondAttribute="trailing" id="yPN-ns-Uil"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="xxe-pU-xq5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="qUm-DX-EsG"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="3BR-bp-A5q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="61o-Gl-ROL"/>
                             <constraint firstAttribute="bottom" secondItem="yoT-1m-vhi" secondAttribute="bottom" id="GbA-jP-OHT"/>
-                            <constraint firstItem="yoT-1m-vhi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gw7-dj-HV4"/>
+                            <constraint firstItem="yoT-1m-vhi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gw7-dj-HV4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="our-fx-qNa" secondAttribute="bottom" id="OPv-Mr-rEb"/>
                             <constraint firstItem="our-fx-qNa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Op2-Sq-oYg"/>
-                            <constraint firstItem="yoT-1m-vhi" firstAttribute="top" secondItem="fN8-Oc-VEK" secondAttribute="bottom" id="Rg8-hq-G88"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fN8-Oc-VEK" secondAttribute="trailing" id="Ygi-29-s8C"/>
                             <constraint firstItem="fN8-Oc-VEK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aO3-QS-W22"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="our-fx-qNa" secondAttribute="trailing" id="cTg-Gj-xI1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yoT-1m-vhi" secondAttribute="trailing" id="cvF-Uw-U9g"/>
+                            <constraint firstItem="our-fx-qNa" firstAttribute="top" secondItem="3BR-bp-A5q" secondAttribute="bottom" id="f3i-3B-qbN"/>
+                            <constraint firstItem="yoT-1m-vhi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gdB-jw-92R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3BR-bp-A5q" secondAttribute="trailing" id="o1m-zo-LhN"/>
+                            <constraint firstItem="3BR-bp-A5q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uzg-de-oWR"/>
                             <constraint firstItem="fN8-Oc-VEK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yC1-6R-Quj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -80,6 +189,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TechLinkedLogo" width="900" height="900"/>
+        <image name="WANshowLogo" width="1191" height="1200"/>
         <image name="home" width="64" height="64"/>
     </resources>
 </document>
